@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+1. Replace images, do not display multiple
+
+Create a card with title: Basic Pizza, Mushroom Pizz, etc.
+Create a card with price: $5.00, @third topping $6.00, etc.
+Create a card with img.
+
+=> One card, three data types
+
+
+h1{obj1.title}
+price{obj1.price}
+img{obj1.img}
+
+Create an array of objects, each object having three data types.
+These data types populate one card by being rerenced through the
+checkboxes.
+
+`${obj1.title}`  -> EcmaScript2015
+-->
+
+
+
+
+<h1>Basic Pizza</h1>
+<p>Price: $5.00</p>
+<img id="imgBASIC" src="https://res.cloudinary.com/a-name-not-already-taken/image/upload/v1583524788/base-pizza_hfguff.jpg" alt="pizza">
+
+<label for="dog">Mushroom<input type="checkbox" value="GM"></label>
+
+<label for="dog2">Veg<input type="checkbox" value="Y"></label>
+
+<label for="dog3">Protein<input type="checkbox" value="D"></label>
+
+<!-- Replace Basic, Basic should display without box -->
+
+<img id="img1" src="https://res.cloudinary.com/a-name-not-already-taken/image/upload/v1583596313/mushroom_nqyacp.jpg" alt="">
+
+<img id="img2" src="https://res.cloudinary.com/a-name-not-already-taken/image/upload/v1583524799/veg-pizza_bufcpk.jpg" alt="pizza">
+
+<img id="img3" src="https://res.cloudinary.com/a-name-not-already-taken/image/upload/v1583524795/protein-pizza_uv1mah.jpg" alt="pizza">
+
+<hr>
+
+<div class="card">
+  <h1></h1>
+  <p>Price: </p>
+  <img src="#" alt="placeholder">
+</div>
+
+<form action="#">
+  <label for="v">V</label>
+  <input id="v" type="checkbox">
+  <label for="p">P</label>
+  <input type="checkbox">
+  <label for="m">M</label>
+  <input id="m" type="checkbox">
+  <input type="submit" value="Get Pizza">
+</form>
+<!--B
+BV, BP, BM,
+BVP, BVM, BPV, BPM, BMV, BMP,   -->
+
+
+</body>
+</html>
