@@ -4,73 +4,80 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Limelight&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9c2c348e64.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!--
-1. Replace images, do not display multiple
 
-Create a card with title: Basic Pizza, Mushroom Pizz, etc.
-Create a card with price: $5.00, @third topping $6.00, etc.
-Create a card with img.
+<nav>
+  <a id="logo" href="#">Tre Signori</a>
+  <a href="#">Contact Us</a>
+  <p><i class="fas fa-search"></i><input type="search" placeholder="search"></p>
+  <i class="fas fa-shopping-cart"></i>
+</nav>
 
-=> One card, three data types
-
-
-h1{obj1.title}
-price{obj1.price}
-img{obj1.img}
-
-Create an array of objects, each object having three data types.
-These data types populate one card by being rerenced through the
-checkboxes.
-
-`${obj1.title}`  -> EcmaScript2015
--->
-
-
-
-<!--
-<h1>Basic Pizza</h1>
-<p>Price: $5.00</p>
-<img id="imgBASIC" src="https://res.cloudinary.com/a-name-not-already-taken/image/upload/v1583524788/base-pizza_hfguff.jpg" alt="pizza">
-
-<label for="dog">Mushroom<input type="checkbox" value="GM"></label>
-
-<label for="dog2">Veg<input type="checkbox" value="Y"></label>
-
-<label for="dog3">Protein<input type="checkbox" value="D"></label>
-
-<!-- Replace Basic, Basic should display without box -->
-
-<!-- <img id="img1" src="https://res.cloudinary.com/a-name-not-already-taken/image/upload/v1583596313/mushroom_nqyacp.jpg" alt="">
-
-<img id="img2" src="https://res.cloudinary.com/a-name-not-already-taken/image/upload/v1583524799/veg-pizza_bufcpk.jpg" alt="pizza">
-
-<img id="img3" src="https://res.cloudinary.com/a-name-not-already-taken/image/upload/v1583524795/protein-pizza_uv1mah.jpg" alt="pizza"> --> 
-
-<hr>
-
-<div class="card">
-  <h1></h1>
-  <p>Price: </p>
-  <img src="#" alt="placeholder">
+<main>
+<div class="place-mat">
+  <div class="plate">
+    <div class="pizza">
+      <div class="sauce" style="visibility:hidden">
+        <div class="cheese" style="visibility:hidden">
+          <img id="ing1" src="#" alt="topping" style="visibility:hidden">
+          <img id="ing2" src="#" alt="topping" style="visibility:hidden">
+          <img id="ing3" src="#" alt="topping" style="visibility:hidden">
+          <img id="ing4" src="#" alt="topping" style="visibility:hidden">
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<aside>
 
-<form action="#">
-  <label for="v">V</label>
-  <input id="v" type="checkbox">
-  <label for="p">P</label>
-  <input id="p" type="checkbox">
-  <label for="m">M</label>
-  <input id="m" type="checkbox">
-  <input type="submit" value="Get Pizza">
-</form>
-<!--B
-BV, BP, BM,
-BVP, BVM, BPV, BPM, BMV, BMP,   -->
-
+  <h2>Menu</h2>
+  <form id="form1" action="#">
+  <h3>Dough</h3>
+  <ul>
+    <li><input id="cau" type="radio" name="dough" value="cauliflower">Cauliflower</li>
+    <li><input id="who" type="radio" name="dough" value="whole wheat">Whole Wheat</li>
+    <li><input id="tra" type="radio" name="dough" value="traditional">Traditional</li>
+  </ul>
+  </form>
+  <form id="form2">
+  <h3>Sauce</h3>
+  <ul>
+    <li><input id="cur" type="radio" name="sauce" value="curry">Curry</li>
+    <li><input id="cre" type="radio" name="sauce" value="cream">Cream</li>
+    <li><input id="mar" type="radio" name="sauce" value="marinara">Marinara</li>
+  </ul>
+  </form>
+  <form id="form3" action="#">
+    <h3>Cheese</h3>
+  <ul>
+    <li><input id="che" type="radio" name="cheese" value="cheese">Cheese</li>
+    <li><input id="noche" type="radio" name="cheese" value="cheese">No Cheese</li>
+    <li><input id="xtrche" type="radio" name="cheese" value="cheese">Extra Cheese</li>
+  </ul>
+  </form>
+  </form>
+  <form id="form4">
+  <h3>Toppings</h3>
+  <ul>
+    <li><input id="spi" type="checkbox">Spinach</li>
+    <li><input id="tom" type="checkbox">Tomatoes</li>
+    <li><input id="bac" type="checkbox">Bacon</li>
+    <li><input id="mus" type="checkbox">Mushrooms</li>
+  </ul>
+  </form>
+ </aside>
+</main>
+<footer>
+  <p>&copy;2020 Tre Signori</p>
+  <p>Salute!</p>
+</footer>
 <script src="index.js"></script>
 </body>
 </html>
